@@ -8,9 +8,15 @@ header{
     background-image: url(../images/atardecer-en-paisaje-nevado-arte-digital_3840x2160_xtrafondos.com.jpg) ;
     background-size:cover;
     padding: 1rem;
+    min-height: 70px;
 }
 
-#grilla {
+.menu__link:hover{
+color:black;
+min-height: 70px;
+}
+
+/* #grilla {
 display: grid;
 grid-template-areas: 
 "border"
@@ -26,7 +32,7 @@ grid-template-areas:
     "nosotros__txt"
     "video"
     "pie-pagina";
-}
+} */
 
 ul li a { color: white;
     font-family: 'calibri';
@@ -35,6 +41,7 @@ ul li a { color: white;
     text-decoration: none;
     display:inline-block;
     font-size: 20px; 
+    min-height: 70px;
 }
 a{
     display: block;
@@ -87,7 +94,6 @@ nav{
 
 ul{
     list-style-type: none;
-    display: flex;
     align-items: center;
     gap: 5rem;
 }
@@ -241,13 +247,27 @@ gap: 1rem;
     font-size: 15px;
 }
 
-    @media screen and (max-width: 480px) {
-        body{
-            flex-direction: column;
-            gap: 2rem;
+    @media screen and (max-width: 700px) {
+   header{
+flex-direction: column;
         }
 
     }
+
+    @media screen and (max-width: 700px) {
+        nav{
+     flex-direction: column;
+             }
+     
+         }
+
+         @media screen and (max-width: 700px) {
+            ul li a{
+         flex-direction:row;
+                 }
+         
+             }
+
         
      
         
